@@ -16,11 +16,13 @@ The response is formatted as such:
 }
 ```
 
+To visual this, I followed the Container, Presenter pattern to produce the following table:
+
 # Screenshots
 
 ![Alt text](https://raw.githubusercontent.com/eltonxue/interview-immerse/master/assets/readme_ss.png)
 
 
 # Packages Used
-Axios
-Prop-types
+- Axios
+- Prop-types
