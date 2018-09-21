@@ -1,0 +1,15 @@
+.contacts-row-container {
+  display: flex;
+}
+
+.image {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.name {
+}
+
+.email {
+}

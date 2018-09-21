@@ -1,0 +1,7 @@
+.contacts-list-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 0px;
+  border: 1px solid black;
+}
