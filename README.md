@@ -2,8 +2,8 @@
 For this exercise, I created a table given an API endpoint that returns a JSON object with a list of contacts as a key-value pair.
 
 # Instructions
-1. Clone the repo onto your desktop
-2. Navigate into the repo in Terminal
+1. Clone the repo
+2. Navigate into the repo in the command line
 3. Run the command
 ```yarn```
 4. Run the command
