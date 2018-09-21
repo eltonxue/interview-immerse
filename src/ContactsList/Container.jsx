@@ -1,14 +1,13 @@
 import React from 'react';
+import axios from 'axios';
 
-import ContactsHeader from './ContactsHeader';
 import ContactsRow from './ContactsRow';
 
 import ContactsListPresenter from './Presenter';
 
-import axios from 'axios';
+import './styles.css';
 
-const API_ENDPOINT =
-  'https://tx5f2mou8e.execute-api.us-west-2.amazonaws.com/dev/get/interview';
+const API_ENDPOINT = '/api/dev/get/interview';
 
 class ContactsListContainer extends React.Component {
   constructor(props) {
@@ -21,7 +20,7 @@ class ContactsListContainer extends React.Component {
 
   componentDidMount() {
     axios
-      .get('/api/dev/get/interview')
+      .get(API_ENDPOINT)
       .then(response => this.setState({ contacts: response.data.contacts }))
       .catch(err => console.log(err));
   }
@@ -32,8 +31,11 @@ class ContactsListContainer extends React.Component {
     ));
 
     return (
-      <div className="contacts-list-container">
-        <ContactsHeader />
+      <div className="contacts-table">
+        <div className="contacts-header-container">
+          <h3 className="name-column">Name</h3>
+          <h3 className="email-column">Email</h3>
+        </div>
         <ContactsListPresenter contacts={Contacts} />
       </div>
     );

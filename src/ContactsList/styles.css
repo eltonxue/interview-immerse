@@ -1,7 +1,30 @@
-.contacts-list-container {
+.contacts-table {
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin: 20px 0px;
-  border: 1px solid black;
+  border: 1px solid #b9b9b9;
+  border-radius: 5px;
+  width: 1000px;
+  box-shadow: 0px 1px 3px grey;
+}
+
+/* Header Columns */
+
+.contacts-header-container {
+  display: flex;
+  padding: 20px 50px 0px 50px;
+  margin-left: 120px;
+}
+
+.contacts-header-container > h3 {
+  font-weight: 500;
+}
+
+.name-column {
+  flex: 3;
+}
+
+.email-column {
+  flex: 2;
 }

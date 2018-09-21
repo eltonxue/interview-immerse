@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import ContactsList from './ContactsList';
 
+import './index.css';
+
 class App extends Component {
   render() {
-    return <ContactsList />;
+    return (
+      <div className="app">
+        <ContactsList />
+      </div>
+    );
   }
 }
 
