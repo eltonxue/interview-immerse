@@ -26,7 +26,7 @@ class ContactsListContainer extends React.Component {
 
   render() {
     const Contacts = this.state.contacts.map(contact => (
-      <ContactsRow {...contact} />
+      <ContactsRow key={contact.email} {...contact} />
     ));
 
     return (
