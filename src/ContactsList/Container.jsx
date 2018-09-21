@@ -2,7 +2,6 @@ import React from 'react';
 import axios from 'axios';
 
 import ContactsRow from './ContactsRow';
-
 import ContactsListPresenter from './Presenter';
 
 import './styles.css';

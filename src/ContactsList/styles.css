@@ -9,11 +9,9 @@
   box-shadow: 0px 1px 3px grey;
 }
 
-/* Header Columns */
-
 .contacts-header-container {
   display: flex;
-  padding: 20px 50px 0px 50px;
+  padding: 30px 50px 0px 50px;
   margin-left: 120px;
 }
 
