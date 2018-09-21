@@ -7,6 +7,10 @@ const ContactsListPresenter = ({ contacts }) => {
   return <div className="contacts-list-container">{contacts}</div>;
 };
 
+ContactsListPresenter.defaultProps = {
+  contacts: []
+};
+
 ContactsListPresenter.propTypes = {
   contacts: PropTypes.array.isRequired
 };

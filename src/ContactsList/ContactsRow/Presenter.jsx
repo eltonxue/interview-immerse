@@ -11,6 +11,13 @@ const ContactsRow = ({ url, firstName, lastName, email }) => (
   </div>
 );
 
+ContactsRow.defaultProps = {
+  url: 'https://eliaslealblog.files.wordpress.com/2014/03/user-200.png', // Random default user image
+  firstName: 'Elton',
+  lastName: 'Xue',
+  email: 'eltonxue@gmail.com'
+};
+
 ContactsRow.propTypes = {
   url: PropTypes.string.isRequired,
   firstName: PropTypes.string.isRequired,
